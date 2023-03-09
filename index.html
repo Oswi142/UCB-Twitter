@@ -1,14 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>UCB  Twitter</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/bootstrap.css">
+  </head>
   <body>
-    <h1>UCB Twitter</h1>
-    <form id="publicar-form">
-      <label for="Titulo">Titulo:</label>
-      <input type="text" id="titulo" />
-      <label for="Detalle">Detalle:</label>
-      <input type="text" id="detalle" />
-      <input type="submit" value="Publicar" id="btn-publicar" />
-    </form>
-
-    <script type="module" src="./src/presenter.js"></script>
+    <div class="div-titulo">
+      <h1>UCB Twitter😁</h1>
+    </div>
+    <div class="contenedor">
+        <div class="div-form">
+          <h3>Realiza tu publicación</h3>
+          <form action="#" id="form">
+            <input type="text" id="titulo" class="form-control" placeholder="Titulo" />
+            <br>
+            <input type="text" id="texto" class="form-control" placeholder="¿En qué estás pensando hoy?" />
+            <br>
+            <button type="submit" id="btn-crear" class="btn btn-info">Publicar</button>
+          </form>
+        </div>
+        <br>
+        <div class="div-postsLista">
+          <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+            <div class="card-header">Posts</div>
+            <div class="card-body">
+              <p class="card-text">
+                <div class="div-posts"></div>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./src/presenter.js"></script>
   </body>
 </html>
